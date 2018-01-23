@@ -2,7 +2,8 @@
   "name": "JustDoIt",
   "private": true,
   "dependencies": {
-    "es6-promise": "^4.2.2"
+    "es6-promise": "^4.2.2",
+    "webpack": "^3.10.0"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
