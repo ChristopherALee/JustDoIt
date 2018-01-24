@@ -99,7 +99,8 @@ li {
 
 .todo-item {
   display: flex;
-  padding: 0 30px;
+  margin: 0 30px;
+  border-bottom: 1px solid black;
 }
 
 .header-title {
