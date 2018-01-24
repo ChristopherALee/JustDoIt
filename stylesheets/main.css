@@ -121,6 +121,11 @@ li {
 .edited-changes {
   width: 90%;
   word-wrap: break-word;
+  -webkit-margin-before: 1.5em;
+  -webkit-margin-after: 1.5em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-size: 20px;
 }
 
 .header-title {
@@ -132,6 +137,7 @@ li {
   font-family: 'Bungee', cursive;
   text-shadow: 3px 3px 3px black;
   -webkit-animation: fadein 2s;
+  user-select: none;
 }
 
 .overlay {

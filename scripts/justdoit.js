@@ -145,7 +145,7 @@ var createTodo = function createTodo(e) {
 
 var edit = function edit() {
   $l('.edit').on('click', function (e) {
-    $l(e.currentTarget).parent().html('\n      <div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <input class=\'edited-changes\' type=\'text\' value=' + $l($l(e.currentTarget).parent().htmlEls[0]).find('li').htmlEls[0].innerHTML + '></input>\n      <p class="submit-changes">Submit</p>\n      ');
+    $l(e.currentTarget).parent().html('\n      <div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <input class=\'edited-changes\' type=\'text\' value=' + $l($l(e.currentTarget).parent().htmlEls[0]).find('li').htmlEls[0].innerHTML + '></input>\n      <div class="submit-changes">\n        <i class="fab fa-telegram-plane"></i>\n      </div>\n      ');
 
     complete();
     submitChanges();
@@ -154,8 +154,8 @@ var edit = function edit() {
 
 var submitChanges = function submitChanges() {
   $l('.submit-changes').on('click', function (e) {
-    var todoValue = $l(e.target).parent().find('input').val();
-    $l(e.target).parent().html('<div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <li class=\'edited-changes\'>\n        ' + todoValue + '\n      </li>\n      <div class="edit">\n        <i class="fas fa-edit"></i>\n      </div>');
+    var todoValue = $l(e.currentTarget).parent().find('input').val();
+    $l(e.currentTarget).parent().html('<div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <li class=\'edited-changes\'>\n        ' + todoValue + '\n      </li>\n      <div class="edit">\n        <i class="fas fa-edit"></i>\n      </div>');
     complete();
     edit();
   });
