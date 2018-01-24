@@ -3,6 +3,11 @@
   100% {transform: translateY(0)}
 }
 
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 html body {
   margin: 0;
   border: 0;
@@ -67,6 +72,7 @@ html body {
   flex-direction: column;
   font-family: 'Bungee', cursive;
   text-shadow: 3px 3px 3px black;
+  -webkit-animation: fadein 2s;
 }
 
 .overlay {
