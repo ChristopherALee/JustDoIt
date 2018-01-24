@@ -60,6 +60,7 @@ li {
 .notepad {
   -webkit-animation: slideUp 1s;
   width: 50%;
+  min-width: 800px;
   height: 98%;
   /* background-color: #fcfcfc; */
   background-color: #fff196;
@@ -84,6 +85,7 @@ li {
 .submit-button {
   position: absolute;
   width: 9%;
+  min-width: 140px;
   margin-left: 7px;
   height: 46px;
   background-color: #fc685d;
@@ -141,6 +143,7 @@ li {
 
 .header-title {
   width: 50%;
+  min-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
