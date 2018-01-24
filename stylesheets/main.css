@@ -71,7 +71,7 @@ li {
 }
 
 .description {
-  width: 80%;
+  width: 90%;
   height: 44px;
   font-size: 30px;
   outline: none;
@@ -85,7 +85,7 @@ li {
 }
 
 .submit-button {
-  width: 9%;
+  width: 20%;
   min-width: 140px;
   margin-left: 7px;
   height: 46px;
