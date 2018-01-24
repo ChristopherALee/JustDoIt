@@ -189,6 +189,8 @@ document.addEventListener("DOMContentLoaded", function () {
   $l('.todo-form').on('submit', function (e) {
     createTodo(e);
   });
+
+  edit();
 });
 
 module.exports = $l;
