@@ -7,6 +7,6 @@ Demonstrates full CRUD functionality:
 - Updating/Editing ToDos
 - Deleting ToDos
 
-<div style="text-align: center">
+<div style="text-align: center; display: flex; justify-content: center; align-items: center;">
   <img src="./screenshots/justdoit.gif"></img>
 </div>
