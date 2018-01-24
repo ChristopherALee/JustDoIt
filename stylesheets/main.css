@@ -78,7 +78,7 @@ li {
 }
 
 .description:focus {
-  border: 1px solid #74d878;
+  border: 1px solid #fc685d;
 }
 
 .submit-button {
@@ -93,8 +93,10 @@ li {
   border-radius: 3px;
 }
 
-.submit-changes {
-  
+.submit-changes:hover {
+  color: #fc685d;
+  cursor: pointer;
+  transition: 0.1s;
 }
 
 .todo-form {
@@ -134,6 +136,7 @@ li {
   -webkit-margin-end: 0px;
   font-size: 20px;
   margin-right: 10px;
+  outline: none;
 }
 
 .header-title {
@@ -173,7 +176,7 @@ li {
 }
 
 .edit:hover {
-  color: #03a9f4;
+  color: #fc685d;
   transition: 0.1s;
   cursor: pointer;
 }

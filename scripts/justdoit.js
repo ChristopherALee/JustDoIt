@@ -145,7 +145,7 @@ var createTodo = function createTodo(e) {
 
 var edit = function edit() {
   $l('.edit').on('click', function (e) {
-    $l(e.currentTarget).parent().html('\n      <div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <input class=\'edited-changes\' type=\'text\' value=' + $l($l(e.currentTarget).parent().htmlEls[0]).find('li').htmlEls[0].innerHTML + '></input>\n      <div class="submit-changes">\n        <i class="fab fa-telegram-plane"></i>\n      </div>\n      ');
+    $l(e.currentTarget).parent().html('\n      <div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <input class=\'edited-changes\' type=\'text\' value="' + $l($l(e.currentTarget).parent().htmlEls[0]).find('li').htmlEls[0].innerHTML.trim() + '"></input>\n      <div class="submit-changes">\n        <i class="fab fa-telegram-plane"></i>\n      </div>\n      ');
 
     complete();
     submitChanges();
