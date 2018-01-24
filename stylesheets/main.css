@@ -120,3 +120,19 @@ li {
   opacity: 0.3;
   position: absolute;
 }
+
+.complete {
+  display: flex;
+  align-items: center;
+}
+
+.svg-inline--fa.fa-w-14 {
+  width: 25px;
+  height: 25px;
+}
+
+.complete:hover {
+  color: #74d878;
+  cursor: pointer;
+  transition: 0.1s;
+}
