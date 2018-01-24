@@ -66,6 +66,7 @@ li {
   background-color: #fff196;
   margin-left: 50px;
   box-shadow: 5px 5px 5px black;
+  border: 0.5px solid black;
 }
 
 .description {
@@ -104,6 +105,7 @@ li {
 .todo-form {
   padding: 30px 25px 30px 16px;
   background-color: #795548;
+  box-shadow: inset 0 0 8px #000000;
 }
 
 .todo-input {
