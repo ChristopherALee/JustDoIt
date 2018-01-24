@@ -7,4 +7,4 @@ Demonstrates full CRUD functionality:
 - Updating/Editing ToDos
 - Deleting ToDos
 
-![main](https://i.imgur.com/AxSu5ZN.gif)
+![main](https://i.imgur.com/JtmVuuP.gif)
