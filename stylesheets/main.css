@@ -69,17 +69,25 @@ li {
   width: 80%;
   height: 44px;
   font-size: 30px;
+  outline: none;
+  padding: 0 5px;
+}
+
+.description:focus {
+  border: 1px solid #74d878;
 }
 
 .submit-button {
   position: absolute;
   width: 9%;
   margin-left: 7px;
-  height: 50px;
+  height: 48px;
+  background-color: #74d878;
+  color: white;
 }
 
 .todo-form {
-  padding: 50px 25px 10px 20px;
+  padding: 50px 25px 10px 16px;
 }
 
 .todo-input {
