@@ -7,4 +7,6 @@ Demonstrates full CRUD functionality:
 - Updating/Editing ToDos
 - Deleting ToDos
 
-![main](./screenshots/justdoit.gif)
+<div style="text-align: center">
+  <img src="./screenshots/justdoit.gif"></img>
+</div>
