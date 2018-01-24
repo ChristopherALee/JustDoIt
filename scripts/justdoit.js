@@ -159,6 +159,15 @@ var submitChanges = function submitChanges() {
     complete();
     edit();
   });
+
+  $l('.edited-changes').on('keydown', function (e) {
+    if (e.keyCode == 13) {
+      var todoValue = $l(e.currentTarget).parent().find('input').val();
+      $l(e.currentTarget).parent().html('<div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <li class=\'edited-changes\'>\n        ' + todoValue + '\n      </li>\n      <div class="edit">\n        <i class="fas fa-edit"></i>\n      </div>');
+      complete();
+      edit();
+    }
+  });
 };
 
 var complete = function complete() {
