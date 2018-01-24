@@ -136,7 +136,7 @@ $l.ajax = function (options) {
 var createTodo = function createTodo(e) {
   e.preventDefault();
   var description = $l('.description');
-  $l('.notepad').append('<div class=\'todo-item\'>\n      <div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <li>' + description.val() + '</li>\n      <p class="edit">Edit</p>\n    </div>');
+  $l('.notepad').append('<div class=\'todo-item\'>\n      <div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <li>' + description.val() + '</li>\n      <div class="edit">\n        <i class="fas fa-edit"></i>\n      </div>\n    </div>');
 
   complete();
   submitFormButton();
@@ -145,7 +145,7 @@ var createTodo = function createTodo(e) {
 
 var edit = function edit() {
   $l('.edit').on('click', function (e) {
-    $l(e.target).parent().html('\n      <div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <input class=\'edited-changes\' type=\'text\' value=' + $l($l(e.target).parent().htmlEls[0]).find('li').htmlEls[0].innerHTML + '></input>\n      <p class="submit-changes">Submit Changes</p>\n      ');
+    $l(e.currentTarget).parent().html('\n      <div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <input class=\'edited-changes\' type=\'text\' value=' + $l($l(e.currentTarget).parent().htmlEls[0]).find('li').htmlEls[0].innerHTML + '></input>\n      <p class="submit-changes">Submit</p>\n      ');
 
     complete();
     submitChanges();
@@ -155,7 +155,7 @@ var edit = function edit() {
 var submitChanges = function submitChanges() {
   $l('.submit-changes').on('click', function (e) {
     var todoValue = $l(e.target).parent().find('input').val();
-    $l(e.target).parent().html('<div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <li class=\'edited-changes\'>\n        ' + todoValue + '\n      </li>\n      <p class="edit">Edit</p>');
+    $l(e.target).parent().html('<div class=\'complete\'>\n        <i class="far fa-check-square"></i>\n      </div>\n      <li class=\'edited-changes\'>\n        ' + todoValue + '\n      </li>\n      <div class="edit">\n        <i class="fas fa-edit"></i>\n      </div>');
     complete();
     edit();
   });
