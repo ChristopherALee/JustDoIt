@@ -18,19 +18,43 @@ html body {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notepad-container {
+  width: 100%;
+  min-width: 500px;
+  height: 1000px;
+  /* margin-left: 125px; */
+  -webkit-animation: slideUp 1s;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .notepad {
-  background-color: white;
-  width: 40%;
-  min-width: 500px;
-  height: 1000px;
-  margin-left: 125px;
-  -webkit-animation: slideUp 1s;
-  overflow-y: scroll;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .todo-input {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 50%;
+}
+
+.header-title {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
