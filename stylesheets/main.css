@@ -34,7 +34,7 @@ li {
 
 .background-image {
   /* background-image: url('http://wallpaperget.com/images/notebook-wallpaper-38.jpg'); */
-  background-image: url('https://pixabay.com/get/e837b30f28f1073ed1534705fb0938c9bd22ffd41cb0174693f3c57ba6/desk-1220056_1920.jpg');
+  background-image: url('../images/background.png');
   background-size: cover;
   position: fixed;
   width: 100vw;
@@ -47,7 +47,7 @@ li {
 .notepad-container {
   width: 100%;
   min-width: 500px;
-  height: 1000px;
+  height: 100%;
   /* margin-left: 125px; */
   overflow-y: scroll;
   display: flex;
@@ -58,10 +58,10 @@ li {
 }
 
 .notepad {
-  -webkit-animation: slideUp 1s;
+  -webkit-animation: slideUp 1.5s;
   width: 50%;
   min-width: 800px;
-  height: 93%;
+  height: 70%;
   /* background-color: #fcfcfc; */
   background-color: #fff196;
   margin-left: 50px;
