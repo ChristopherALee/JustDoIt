@@ -2,6 +2,8 @@
 
 A To-Do application that uses the StarDOM custom JavaScript library that I built, specializing in DOM manipulation and event handling.
 
+[Live-Demo](http://www.christopheradamlee.com/JustDoIt/)
+
 Demonstrates full CRUD functionality:
 - Creating ToDos
 - Updating/Editing ToDos
