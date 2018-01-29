@@ -187,3 +187,47 @@ li {
   transition: 0.1s;
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.logo {
+  background-image: url("../screenshots/CAL_Logo_white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+.logo:hover {
+  background-image: url("../screenshots/CAL_Logo_red.png");
+}
+
+.fa-github {
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+.fa-github:hover {
+  color: #fc685d;
+}
+
+.fa-linkedin {
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+.fa-linkedin:hover {
+  color: #fc685d;
+}
