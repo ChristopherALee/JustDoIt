@@ -4,6 +4,10 @@ A To-Do application that uses the StarDOM custom JavaScript library that I built
 
 [Live-Demo](http://www.christopheradamlee.com/JustDoIt/)
 
+<div style="text-align: center; display: flex; justify-content: center; align-items: center;">
+<img src="./screenshots/justdoit.gif"></img>
+</div>
+
 ## Demonstrates full CRUD functionality:
 ### Creating ToDos
 ``` javascript
@@ -54,7 +58,3 @@ const complete = () => {
   });
 };
 ```
-
-<div style="text-align: center; display: flex; justify-content: center; align-items: center;">
-  <img src="./screenshots/justdoit.gif"></img>
-</div>
