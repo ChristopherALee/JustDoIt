@@ -24,6 +24,7 @@ li {
 #header1 {
   color: white;
   font-size: 130px;
+  margin: 0;
 }
 
 #tagline {
