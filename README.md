@@ -10,5 +10,5 @@ Demonstrates full CRUD functionality:
 - Deleting ToDos
 
 <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
-  <img src="./screenshots/justdoit.gif"></img>
+  <img src="https://i.imgur.com/TVl9j3o.gif"></img>
 </div>
