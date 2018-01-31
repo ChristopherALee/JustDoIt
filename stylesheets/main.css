@@ -3,6 +3,11 @@
   100% {transform: translateY(0)}
 }
 
+@-webkit-keyframes slideUpFade {
+  0% { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -231,4 +236,45 @@ a {
 
 .fa-linkedin:hover {
   color: #fc685d;
+}
+
+.stardom-credit {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: 'Bungee', cursive;
+  text-shadow: 3px 3px 3px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  z-index: 1;
+  -webkit-animation: slideUpFade 1.5s;
+}
+
+.stardom-link:hover {
+  color: #5476d9;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.made-with-stardom {
+  font-size: 50px;
+}
+
+.built-with {
+  font-size: 20px;
+}
+
+.stardom-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  margin: 0;
 }
